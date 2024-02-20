@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimov</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- font family -->
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+
+    <style>
+        .section {
+            background: url(./img/background.jpeg);
+            background-size: 100%;
+        }
+
+        .proect {
+            background: url(./img/proect-bg.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .proect__item {
+            width: 700px;
+            height: 450px;
+            overflow: hidden;
+        }
+
+        .master {
+            background: url(./img/master-bg.jpeg);
+            /* background-repeat: no-repeat; */
+            background-size: 100%;
+        }
+
+        .remont {
+            background: url(./img/remont-bg.jpeg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .footer{
+            background: url(./img/footer-bg.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header and hero -->
+    <section class="section">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <nav class="header__nav">
+                    <!-- logo -->
+                    <a class="nav__logo" href="index.html">
+                        <img src="./img/logo__one.svg" alt="">
+                        <img src="./img/logo__two.svg" alt="">
+                    </a>
+
+                    <!-- list -->
+                    <ul class="header__list">
+                        <!-- 1 -->
+                        <li class="header__item">
+                            <img src="./img/metka.png" alt="">
+                            <p>г.Придуманный, <br> Названная, 14/7</p>
+                        </li>
+                        <!-- 2 -->
+                        <li class="header__item">
+                            <img src="./img/clock.png" alt="">
+                            <p>с 9:00 до 20:00</p>
+                        </li>
+                        <!-- 3 -->
+                        <li class="header__item">
+                            <img src="./img/phone.png" alt="">
+                            <p>+8 (000) 000-00-00</p>
+                        </li>
+
+                        <button class="header__btn">обратный звонок</button>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- hero -->
+        <section class="hero">
+            <div class="container">
+                <img class="hero__img" src="./img/hero__home.svg" alt="">
+
+                <h1 class="hero__title">Профессиональный <span class="span__remont">ремонт</span>
+                    <br> за адекватные <span class="span__dengi">деньги</span>
+                </h1>
+                <p class="hero__text">Наш ремонт Вы будете показывать друзьям и вспоминать только добрыми словами</p>
+                <p class="hero__text__two">Свяжемся с Вами <span class="span__whatsup">WHATSAPP</span> для обсуждения
+                    ремонта и <br> расчёта стоимости. Укажите Ваш актуальный номер</p>
+
+                <div class="hero__flex">
+                    <!-- left -->
+                    <div class="hero__input__div">
+                        <img src="./img/whatsapp.png" alt="">
+                        <input type="text" placeholder="+8 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                    </div>
+
+                    <!-- right -->
+                    <div class="div__button">
+                        <button class="hero__btn">Получить на watsapp</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <!-- advert -->
+    <section class="advert">
+        <div class="container">
+            <div class="advert__div">
+                <div class="fist__div">
+                    <img src="./img/advert-house.svg" alt="">
+                    <h3 class="first__div__h3">Ремонт<br>
+                        можно <span class="span__zakaz">заказать <br>
+                            в рассрочку</span></h3>
+                </div>
+                <div class="second__div">
+                    <img src="./img/advert-women.svg" alt="">
+                    <h3 class="second__div__h3"><span class="span__skidka">5% скидка</span> <br>
+                        только до конца <br>
+                        февраля!</h3>
+                </div>
+            </div>
+
+            <!-- down section -->
+            <h2 class="advert__title">Наши преимущества</h2>
+            <img class="shpuyor" src="./img/shpuyor.svg" alt="">
+            <ul class="advert__list">
+                <!-- 1 -->
+                <li class="advert__item">
+                    <img src="./img/security.svg" alt="">
+                    <p>До ПЯТИ лет Гарантии</p>
+                </li>
+                <!-- 2 -->
+                <li class="advert__item">
+                    <img src="./img/document.svg" alt="">
+                    <p>Заключаем официальный договор</p>
+                </li>
+                <!-- 3 -->
+                <li class="advert__item">
+                    <img src="./img/search.svg" alt="">
+                    <p>Регулярные отчёты в WhatsApp</p>
+                </li>
+                <!-- 4 -->
+                <li class="advert__item">
+                    <img src="./img/checkmark.svg" alt="">
+                    <p>Уделяем максимум внимания <br>
+                        каждому объекту</p>
+                </li>
+                <!-- 5 -->
+                <li class="advert__item">
+                    <img src="./img/price.svg" alt="">
+                    <p>Стройматериалы со своего склада <br>
+                        по ценам Петровича</p>
+                </li>
+                <!-- 6 -->
+                <li class="advert__item">
+                    <img src="./img/project.svg" alt="">
+                    <p>100% точный замер и точная смета</p>
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- proect carusel -->
+    <section class="proect">
+        <div class="container">
+            <h2 class="proect__title">Наши проекты</h2>
+            <p class="proect__text">Квартира студия в ЖК Подкова</p>
+
+            <div class="wrapper">
+                <button onclick="left()" class="carusel__left">
+                    < </button>
+                        <div class="list__wrapper">
+                            <ul class="proect__list">
+                                <!-- 1 -->
+
+                                <li class="proect__item">
+                                    <img src="./img/house-design.jpg" alt="house">
+                                </li>
+                                <!-- 2 -->
+
+                                <li class="proect__item">
+                                    <img src="./img/three-house.jpg" alt="design-house">
+                                </li>
+                                <!-- 3 -->
+
+                                <li class="proect__item">
+                                    <img src="./img/five-house.jpg" alt="design-house">
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="right()" class="carusel__right"> > </button>
+            </div>
+
+
+            <!-- carusel info shokx -->
+
+            <div class="carusel__div">
+                <div class="carusel__div__one">
+                    <img src="./img/metr.png" alt="">
+                    <p>107 м2</p>
+                </div>
+                <div class="carusel__div__one">
+                    <img src="./img/calendar.png" alt="">
+                    <p>28 дней</p>
+                </div>
+                <div class="carusel__div__one">
+                    <img src="./img/theme.png" alt="">
+                    <p>Лофт</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- info -->
+    <section class="info">
+        <div class="container">
+            <h1 class="info__title">
+                Почему мы? <br>
+                <span class="span__vigoda">и в чем Ваша выгода?</span>
+            </h1>
+
+            <div class="info__flex">
+
+                <!-- 1 -->
+
+                <div class="first__div">
+                    <div class="border">
+                        <img src="./img/info-sm.svg" alt="">
+                    </div>
+
+                    <p class="border__text"><span>Вы экономите на смете</span>
+                        , за счет точного <br> экспертного замера. </p>
+
+                    <p class="border__text">Здесь «недоглядели» и нужно доплатить за <br> услуги. Там что-то пошло не
+                        так, и цена работ <br> возросла
+                        в двое. </p>
+
+                    <p class="border__text">Одним словом, Вы теряете деньги и время.</p>
+
+                    <p class="border__text"> Мы умеем делать замеры со 100% точностью. <br> Поэтому и смета будет очень
+                        точная. Вы <br>потратите ровно
+                        столько, сколько указано в <br> смете. Ни копейки больше.</p>
+                </div>
+
+                <!-- 2 -->
+
+                <div class="first__div two__div">
+                    <div class="border">
+                        <img src="./img/info-kraska.svg" alt="">
+                    </div>
+
+                    <p class="border__text"><span>Вы экономите на строительных материалах <br> доставке и разгрузке.
+                            Почему? </p>
+
+                    <p class="border__text">Потому что мы покупаем их у проверенных <br> поставщиков со скидкой и
+                        предоставляем <br> Вам по ценам
+                        сетевых магазинов Петрович и <br> Леруа.</p>
+                </div>
+
+                <!-- 3 -->
+
+                <div class="first__div">
+                    <div class="border">
+                        <img src="./img/info-text.svg" alt="">
+                    </div>
+
+                    <p class="border__text"><span>Вы экономите на смете</span>
+                        , за счет точного <br> экспертного замера. </p>
+
+                    <p class="border__text">Здесь «недоглядели» и нужно доплатить за <br> услуги. Там что-то пошло не
+                        так, и цена работ <br> возросла
+                        в двое. </p>
+
+                    <p class="border__text">Одним словом, Вы теряете деньги и время.</p>
+
+                    <p class="border__text"> Мы умеем делать замеры со 100% точностью. <br> Поэтому и смета будет очень
+                        точная. Вы <br>потратите ровно
+                        столько, сколько указано в <br> смете. Ни копейки больше.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- function -->
+    <section class="function">
+        <div class="container">
+            <h1 class="function__title">Этапы оформления заявки</h1>
+
+            <div class="function__flex">
+                <!-- 1 -->
+                <div class="function__first">
+                    <img src="./img/calculator.svg" alt="">
+                    <p class="function__text">Мы прямо сейчас <br> рассчитаем примерную <br> стоимость ремонта и <br>
+                        отправим Вам на <br> Whatsapp. <br> <span>Открыть
+                            калькулятоp</span></p>
+                </div>
+
+                <!-- 2 -->
+                <div class="function__first">
+                    <img src="./img/function-metr.svg" alt="">
+                    <p class="function__text">Затем приедем к Вам, <br> сделаем замер и <br> сделаем точный
+                        <br>экспертный расчёт.
+                    </p>
+                </div>
+
+                <!-- 3 -->
+                <div class="function__first">
+                    <img src="./img/function-question.svg" alt="">
+                    <p class="function__text">На первой встрече мы <br> ответим на все Ваши <br> вопросы
+                    </p>
+                </div>
+
+                <!-- 4 -->
+                <div class="function__first">
+                    <img src="./img/function-document.svg" alt="">
+                    <p class="function__text">Мы прямо сейчас <br> рассчитаем примерную <br> стоимость ремонта и <br>
+                        отправим Вам на <br> Whatsapp. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- master -->
+    <section class="master">
+        <div class="container">
+            <h1 class="master__title">наши мастера</h1>
+            <img class="ruler" src="./img/master-ruler.svg" alt="">
+
+            <div class="master__wrapper">
+                <ul class="master__list">
+                    <!-- 1 -->
+                    <li class="master__item">
+                        <img src="./img/master_photo-1.svg" alt="">
+                    </li>
+                    <!-- 2 -->
+                    <li class="master__item">
+                        <img src="./img/master_photo-1.svg" alt="">
+                    </li>
+                    <!-- 3 -->
+                    <li class="master__item">
+                        <img src="./img/master_photo-1.svg" alt="">
+                    </li>
+                    <!-- 4 -->
+                    <li class="master__item">
+                        <img src="./img/master_photo-1.svg" alt="">
+                    </li>
+                    <!--5 -->
+                    <li class="master__item">
+                        <img src="./img/master_photo-1.svg" alt="">
+                    </li>
+                    <!-- 6 -->
+                    <li class="master__item">
+                        <img src="./img/master_photo-1.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <button class="master__left">
+                < </button>
+                    <button class="master__right"> > </button>
+
+        </div>
+    </section>
+
+    <!--wrong  -->
+    <section class="wrong">
+        <div class="container wrong__container">
+            <div class="wrong__border">
+                <img src="./img/wrong-img.svg" alt="">
+            </div>
+
+            <div class="wrong__right">
+                <h1 class="wrong__title">Давайте познакомимся!</h1>
+                <p class="wrong__text">Меня зовут Архангельский Дмитрий, я генеральный директор строительной компании
+                    <br> ОЗОН</p>
+                <p class="wrong__bold">Что значит максимум внимания?</p>
+                <p class="wrong__text">Это значит во первых что мы не набираем огромное количество объектов и я лично
+                    <br> могу следить за ходом
+                    работ на каждом из них. Bo-вторых я открыт для каждого нашего <br> заказчика и каждого сотрудника
+                    7/0 и
+                    готов быстро отреагировать на любой вопрос</p>
+                <p class="wrong__text">Все наши заказчики это занятые люди, мы это понимаем и стремимся оказывать услугу
+                    <br> комплексно – под
+                    ключ. Некоторые наши клиенты вообще не приезжают на объект, <br> следят за ходом работ по Whatsapp
+                    или
+                    вебкамерам.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- remont -->
+    <section class="remont">
+        <div class="container">
+            <h1 class="remont__title">Чаще всего, ремонт бывает двух типов: <br>
+                <span>стандартный</span> и <span>дизайнерский.</span>
+            </h1>
+            <img class="remont-img" src="./img/remont-img.svg" alt="">
+
+            <div class="remont__flex">
+                <!-- 1 -->
+                <div class="remont__first">
+                    <div class="remont__div">
+                        <h1>Стандартный <br>
+                            ремонт</h1>
+                    </div>
+                    <p class="remont__underline">10 000 р/м2 по полу</p>
+                    <h4 class="remont__h4"><span class="polu">8 000 р/м2</span> по полу</h4>
+                    <p class="remont__text">Устройство стяжки по маякам <br>
+                        Грунтовка пола и стен <br>
+                        Грунтовка стен (бетоноконтактом) <br>
+                        Гидроизоляция мокрых зон <br>
+                        Шпаклевка стен <br>
+                        Установка электроточек <br>
+                        Сборка электрощита <br>
+                        Прокладка кабеля <br>
+                        Комплексная разводка труб <br>
+                        Комплексная разводка труб </p>
+                    <button class="remont__btn">Отправить заявку</button>
+                </div>
+                <!-- 2 -->
+                <div class="remont__first remont__two">
+                    <div class="remont__div ">
+                        <h1>Дизайнерский <br>
+                            ремонт
+                        </h1>
+                    </div>
+                    <p class="remont__underline">15 000 р/м2 по полу</p>
+                    <h4 class="remont__h4"><span class="polu">13 000 р/м2</span> по полу</h4>
+                    <p class="remont__text">Устройство стяжки по маякам <br>
+                        Грунтовка пола и стен <br>
+                        Грунтовка стен (бетоноконтактом) <br>
+                        Гидроизоляция мокрых зон <br>
+                        Шпаклевка стен <br>
+                        Установка электроточек <br>
+                        Сборка электрощита <br>
+                        Прокладка кабеля <br>
+                        Комплексная разводка труб <br>
+                        Комплексная разводка труб</p>
+                    <button class="remont__btn">Отправить заявку</button>
+                </div>
+            </div>
+            <p class="remont__coment">* Стоимость примерная, так как зависит от точных замеров</p>
+
+        </div>
+    </section>
+
+    <!-- question -->
+    <section class="question">
+        <div class="container">
+            <h1 class="question__title">Вопросы и ответы</h1>
+
+            <div class="question__answer">
+                <!-- 1 -->
+                <div class="question__div">
+                    <div class="question__flex">
+                        <h3>Вопросы и ответы</h3>
+                        <button onclick="btn()" class="question__btn">+</button>
+                    </div>
+                    <p class="question__text">Выбирайте удобный для вас способ: наличными, по безналу или банковской картой.</p>
+                </div>
+                 <!-- 2 -->
+                 <div class="question__div">
+                    <div class="question__flex">
+                        <h3>Вопросы и ответы</h3>
+                        <button onclick="btn()" class="question__btn">+</button>
+                    </div>
+                    <p class="question__text">Выбирайте удобный для вас способ: наличными, по безналу или банковской картой.</p>
+                </div>
+                 <!-- 3 -->
+                 <div class="question__div">
+                    <div class="question__flex">
+                        <h3>Вопросы и ответы</h3>
+                        <button onclick="btn()" class="question__btn">+</button>
+                    </div>
+                    <p class="question__text">Выбирайте удобный для вас способ: наличными, по безналу или банковской картой.</p>
+                </div>
+                 <!-- 4 -->
+                 <div class="question__div">
+                    <div class="question__flex">
+                        <h3>Вопросы и ответы</h3>
+                        <button onclick="btn()" class="question__btn">+</button>
+                    </div>
+                    <p class="question__text">Выбирайте удобный для вас способ: наличными, по безналу или банковской картой.</p>
+                </div>
+                 <!-- 5 -->
+                 <div class="question__div">
+                    <div class="question__flex">
+                        <h3>Вопросы и ответы</h3>
+                        <button onclick="btn()" class="question__btn">+</button>
+                    </div>
+                    <p class="question__text">Выбирайте удобный для вас способ: наличными, по безналу или банковской картой.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer__left">
+                <img src="./img/footer-img.svg" alt="">
+            </div>
+
+            <div class="footer__right">
+                <h2 class="footer__h2">Вы просто позвоните <br> нам прямо сейчас</h2>
+                <h2 class="footer__number">8 (000) 000-00-00</h2>
+                <p class="footer__text">где и какой нужен ремонт.</p>
+
+                <p class="footer__text">А потом приедете к нам в офис на чашечку вкусного <br> кофе капучино по адресу: </p>
+                <p class="footer__orange">г.Придуманный. ул. Названная, 14/7 </p>
+                <p class="footer__aqua">схема проезда</p>
+                <p class="footer__text">И мы вам расскажем, какие самые свежие тренды в <br> дизайне и самые последние новинки в ремонте.</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
+
+<!-- creted by shoxrux -->
